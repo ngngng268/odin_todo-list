@@ -1,5 +1,5 @@
 import { projectList } from "./index.js";
-import { addNewProject } from "./projectClass";
+import { addNewProject } from "./projectClass.js";
 
 class todoItem {
     constructor (title, description, dueDate, priority, completion, project) {
