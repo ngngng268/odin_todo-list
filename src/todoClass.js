@@ -26,11 +26,12 @@ function addNewTodoItem (title, description, dueDate, priority, completion, proj
     for (let i =0; i <projectList.length ; i++) {
         if (projectList[i].name === newTodoItem.project) {
             projectList[i].todoList.push(newTodoItem);
-            return {newTodoItem};
+            continue
         } else {
             addNewProject(`${newTodoItem.project}`).todoList.push(newTodoItem);
         }
-    }
+    };
+    return {newTodoItem};
 }
 
-export {todoItem, }
+export {todoItem, addNewTodoItem}
