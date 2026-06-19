@@ -12,24 +12,43 @@
         <button class="new" command="show-modal" commandfor="inputDialog">+ New</button>
         <dialog id="inputDialog">
             <form>
+                <div id="project">
+                    <label for="project">PROJECT</label>
+                    <input type="text" id="project" name="project" class="projectInput" />
+                </div>
+
                 <div id="title">
                     <label for="title">TITLE</label>
                     <input type="text" id="title" name="title" class="titleInput" />
                 </div>
-                <div id="author">
-                    <label for="author">AUTHOR</label>
-                    <input type="text" id="author" name="author" class="authorInput" />
+                <div id="description">
+                    <label for="description">DESCRIPTION</label>
+                    <input type="text" id="description" name="description" class="descriptionInput" />
                 </div>
-                <div id="pages">
-                    <label for="pages">PAGES</label>
-                    <input type="number" id="pages" name="pages" class="pagesInput" />
+                <div id="dueDate">
+                    <label for="dueDate">DUE DATE</label>
+                    <input type="datetime-local" id="dueDate" name="dueDate" class="dueDateInput" />
                 </div>
-                <div id="read">
-                    <legend>READ STATUS</legend>
-                    <input type="radio" id="read1" name="read" value="read" class="readInput" />
-                    <label for="read1">Read</label>
-                    <input type="radio" id="read2" name="read" value="unread" class="readInput" />
-                    <label for="read2">Unread</label>
+                <div id="completion">
+                    <legend>COMPLETION STATUS</legend>
+                    <input type="radio" id="completionStatus1" name="completionStatus" value="completed"
+                        class="completionStatusInput" />
+                    <label for="completionStatus1">Completed</label>
+                    <input type="radio" id="completionStatus2" name="completionStatus" value="onHold"
+                        class="completionStatusInput" />
+                    <label for="completionStatus2">On Hold</label>
+                    <input type="radio" id="completionStatus3" name="completionStatus" value="onGoing"
+                        class="completionStatusInput" />
+                    <label for="completionStatus3">On-going</label>
+                </div>
+                <div id="priority">
+                    <legend>PRIORITY</legend>
+                    <input type="radio" id="priority" name="priority" value="red" class="priorityInput" />
+                    <label for="priority1">Red</label>
+                    <input type="radio" id="priority2" name="priority" value="yellow" class="priorityInput" />
+                    <label for="priority2">Yellow</label>
+                    <input type="radio" id="priority3" name="priority" value="green" class="priorityInput" />
+                    <label for="priority3">Green</label>
                 </div>
 
             </form>
@@ -38,7 +57,7 @@
 
     </div>
     <div class="content">
-        
+
     </div>
 </body>
 
